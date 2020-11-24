@@ -17,7 +17,7 @@ from utils import progress_bar
 # Set Visible Device 
 os.environ["CUDA_VISIBLE_DEVICES"] = '2,3'
 # Filename
-FILENAME='ResNet50.pth'
+FILENAME='ResNet101.pth'
 
 parser = argparse.ArgumentParser(description='PyTorch CIFAR10 Training')
 parser.add_argument('--lr', default=0.1, type=float, help='learning rate')
@@ -59,7 +59,7 @@ classes = ('plane', 'car', 'bird', 'cat', 'deer',
 # Model
 print('==> Building model..')
 # net = VGG('VGG16')
-net = ResNet50()
+net = ResNet101()
 # net = PreActResNet18()
 # net = GoogLeNet()
 # net = DenseNet121()
